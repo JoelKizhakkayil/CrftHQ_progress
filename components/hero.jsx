@@ -7,7 +7,8 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {
-  const imageRef = useRef<HTMLDivElement | null>(null);
+  // ✅ Use React’s ref typing instead of raw HTMLDivElement
+  const imageRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const imageElement = imageRef.current;
@@ -43,7 +44,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-         className="text-5xl font-bold md:text-6xl lg:text-7xl xl:text-8xl gradient-title animate-gradient"
+          className="text-5xl font-bold md:text-6xl lg:text-7xl xl:text-8xl gradient-title animate-gradient"
         >
           Your Career Coach for
           <br />
@@ -67,7 +68,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.4, duration: 0.6 }}
           className="flex justify-center space-x-4"
-        > 
+        >
           <Link href="/dashboard">
             <Button
               size="lg"
@@ -93,7 +94,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.8 }}
-          className="hero-image-wrapper mt-8 md:mt-12"
+          className="hero-image-wrapper mt-8 md:mt-12 bounce"
         >
           <motion.div
             className="hero-image"
