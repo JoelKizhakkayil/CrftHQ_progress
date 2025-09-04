@@ -31,7 +31,7 @@ export default async function Header() {
             alt="JobSecure Logo"
             width={200}
             height={60}
-            className="h-12 py-1 w-auto object-contain"
+            className="h-14 py-1 w-auto object-contain"
           />
         </Link>
 

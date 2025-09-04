@@ -7,10 +7,11 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {
-  const imageRef = useRef<HTMLDivElement | null>(null);
+  const imageRef = useRef(null);
+
 
   useEffect(() => {
-    const imageElement = imageRef.current;
+    const imageElement = imageRef.current; 
 
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
@@ -31,14 +32,12 @@ const HeroSection = () => {
 
   return (
     <section className="relative w-full pt-28 md:pt-40 pb-16 overflow-hidden">
-      {/* Animated Background Glow */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-[-100px] left-[20%] w-[400px] h-[400px] rounded-full bg-gray-500/20 blur-3xl animate-pulse" />
         <div className="absolute bottom-[-100px] right-[10%] w-[400px] h-[400px] rounded-full bg-gray-500/20 blur-3xl animate-pulse" />
       </div>
 
       <div className="space-y-8 text-center">
-        {/* Title */}
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -49,8 +48,6 @@ const HeroSection = () => {
           <br />
           Professional Success
         </motion.h1>
-
-        {/* Subtext */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -93,7 +90,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.8 }}
-          className="hero-image-wrapper mt-8 md:mt-12"
+          className="hero-image-wrapper mt-8 md:mt-12 bounce"
         >
           <motion.div
             className="hero-image"

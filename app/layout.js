@@ -5,13 +5,12 @@ import { Toaster } from "sonner";
 import Header from "@/components/header";
 import { ThemeProvider } from "@/components/theme-provider";
 import { dark } from "@clerk/themes";
-import { date } from "zod";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "AI Career Coach",
-  description: "",
+  description: "Simplifying Career Development",
 };
 
 export default function RootLayout({ children }) {
