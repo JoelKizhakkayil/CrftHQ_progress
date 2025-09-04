@@ -31,6 +31,38 @@ export default function RootLayout({ children }) {
             enableSystem
             disableTransitionOnChange
           >
+            {/* 🌌 Background (stars + meteors) */}
+            <div
+              className="fixed inset-0 -z-10 bg-black pointer-events-none"
+              aria-hidden="true"
+            >
+              {/* Stars */}
+              {[...Array(60)].map((_, i) => (
+                <div
+                  key={`star-${i}`}
+                  className="star"
+                  style={{
+                    top: `${Math.random() * 100}%`,
+                    left: `${Math.random() * 100}%`,
+                  }}
+                />
+              ))}
+
+              {/* Meteors */}
+              {[...Array(8)].map((_, i) => (
+                <div
+                  key={`meteor-${i}`}
+                  className="meteor"
+                  style={{
+                    top: `${Math.random() * 100}%`,
+                    left: `${Math.random() * 100}%`,
+                    animationDelay: `${Math.random() * 10}s`,
+                  }}
+                />
+              ))}
+            </div>
+
+            {/* Main UI */}
             <Header />
             <main className="min-h-screen">{children}</main>
             <Toaster richColors />
@@ -45,6 +77,5 @@ export default function RootLayout({ children }) {
         </body>
       </html>
     </ClerkProvider>
-    
   );
 }
