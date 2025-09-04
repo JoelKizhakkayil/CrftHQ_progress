@@ -37,7 +37,7 @@ const HeroSection = () => {
           </h1>
           <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl">
             Advance your career with personalized guidance, interview prep, and
-            AI-powered tools for job success.
+            AI-powered tools for job success all at the cost of NOTHING.
           </p>
         </div>
         <div className="flex justify-center space-x-4">
@@ -52,10 +52,12 @@ const HeroSection = () => {
             </Button>
           </Link>
         </div>
-        <div className="hero-image-wrapper mt-5 md:mt-0">
+        <div className="hero-image-wrapper mt-8 md:mt-12 bounce-animation initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.8 }}">
           <div ref={imageRef} className="hero-image">
             <Image
-              src="/banner.jpeg"
+              src={"/resume.png"}
               width={1280}
               height={720}
               alt="Dashboard Preview"
