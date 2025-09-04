@@ -1,26 +1,26 @@
 export const testimonial = [
   {
     quote:
-      "The career coaching sessions were transformative. I landed my dream job within a month!",
+      "The career coaching sessions were transformative!",
     author: "Joel John",
-    image: "https://randomuser.me/api/portraits/men/75.jpg",
-    role: "Software Engineer",
-    company: "Tech Giant Co.",
+    image: "/logo1.png",
+    role: "Student",
+    company: "VITC",
   },
   {
     quote:
       "The industry insights helped me pivot my career successfully. The salary data was spot-on!",
     author: "Joel John 2",
-    image: "https://randomuser.me/api/portraits/men/75.jpg",
-    role: "Product Manager",
+    image: "/logo1.png",
+    role: "Web Developer",
     company: "StartUp Inc.",
   },
   {
     quote:
-      "My resume's ATS score improved significantly. Got more interviews in two weeks than in six months!",
+      "My resume's ATS score improved significantly!",
     author: "Joel John 3",
-    image: "https://randomuser.me/api/portraits/men/74.jpg",
-    role: "Marketing Director",
+    image: "/logo1.png",
+    role: "Wannabe Software Engineer",
     company: "Global Corp",
   },
 ];
