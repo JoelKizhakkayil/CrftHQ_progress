@@ -1,32 +1,32 @@
 export const faqs = [
   {
-    question: "What makes JobSecure unique as a career development tool?",
+    question: "Why should I use JobSecure for my career growth?",
     answer:
-      "JobSecure combines AI-powered career tools with industry-specific insights to help you advance your career. Our platform offers three main features: an intelligent resume builder, a cover letter generator, and an adaptive interview preparation system. Each tool is tailored to your industry and skills, providing personalized guidance for your professional journey.",
+      "JobSecure is designed to make your job search easier and more personal. We use smart AI tools to help you build your resume, write cover letters, and get ready for interviews. Everything is tailored to your background and goals, so you get advice that actually fits your career journey.",
   },
   {
-    question: "How does JobSecure create tailored content?",
+    question: "How does JobSecure know what’s right for me?",
     answer:
-      "JobSecure learns about your industry, experience, and skills during onboarding. It then uses this information to generate customized resumes, cover letters, and interview questions. The content is specifically aligned with your professional background and industry standards, making it highly relevant and effective.",
+      "When you sign up, we ask about your experience, skills, and the industry you’re in. Our AI uses this info to create resumes, cover letters, and interview questions that match your unique story. You get content that feels personal and relevant, not just generic templates.",
   },
   {
-    question: "How accurate and up-to-date are JobSecure's industry insights?",
+    question: "Are the industry insights really current?",
     answer:
-      "We update our industry insights weekly using advanced AI analysis of current market trends. This includes salary data, in-demand skills, and industry growth patterns. Our system constantly evolves to ensure you have the most relevant information for your career decisions.",
+      "Yes! We update our insights every week using the latest market data and trends. You’ll see up-to-date info on salaries, in-demand skills, and what’s happening in your field, so you can make smart decisions about your career.",
   },
   {
-    question: "Is my data secure with JobSecure?",
+    question: "Is my personal data safe with JobSecure?",
     answer:
-      "Absolutely. We prioritize the security of your professional information. All data is encrypted and securely stored using industry-standard practices. We use Clerk for authentication and never share your personal information with third parties.",
+      "Your privacy matters to us. We use strong encryption and secure storage to keep your information safe. Authentication is handled by Clerk, and we never share your data with anyone else.",
   },
   {
-    question: "How can I track my interview preparation progress?",
+    question: "How do I know if I’m improving in interviews?",
     answer:
-      "JobSecure tracks your performance across multiple practice interviews, providing detailed analytics and improvement suggestions. You can view your progress over time, identify areas for improvement, and receive AI-generated tips to enhance your interview skills based on your responses.",
+      "JobSecure tracks your practice interviews and gives you easy-to-understand feedback. You’ll see your progress, get tips on what to work on, and receive suggestions from our AI to help you get better with every session.",
   },
   {
-    question: "Can I edit the AI-generated content?",
+    question: "Can I change the content JobSecure creates for me?",
     answer:
-      "Yes! While JobSecure generates high-quality initial content, you have full control to edit and customize all generated resumes, cover letters, and other content. Our markdown editor makes it easy to refine the content to perfectly match your needs.",
+      "Absolutely! Everything we generate is just a starting point. You can edit and customize your resume, cover letter, and other content as much as you want. Our editor makes it simple to tweak things until they’re just right for you.",
   },
-];
+]

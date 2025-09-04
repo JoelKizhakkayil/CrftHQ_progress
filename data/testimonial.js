@@ -1,7 +1,7 @@
 export const testimonial = [
   {
     quote:
-      "The career coaching sessions were transformative!",
+      "The career coaching sessions were invaluable. I landed my dream job thanks to the expert advice!",
     author: "Joel John",
     image: "/logo1.png",
     role: "Student",
@@ -9,7 +9,7 @@ export const testimonial = [
   },
   {
     quote:
-      "The industry insights helped me pivot my career successfully. The salary data was spot-on!",
+      "The industry insights helped me change careers successfully. The salary data was really accurate!",
     author: "Joel John 2",
     image: "/logo1.png",
     role: "Web Developer",
@@ -17,7 +17,7 @@ export const testimonial = [
   },
   {
     quote:
-      "My resume's ATS score improved significantly!",
+      "I got more interview calls after using the AI-powered resume builder.",
     author: "Joel John 3",
     image: "/logo1.png",
     role: "Wannabe Software Engineer",

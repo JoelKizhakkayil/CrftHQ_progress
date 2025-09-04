@@ -66,11 +66,11 @@ export default function LandingPage() {
               <p className="text-muted-foreground">Industries Covered</p>
             </div>
             <div className="flex flex-col items-center justify-center space-y-2">
-              <h3 className="text-4xl font-bold">1000+</h3>
+              <h3 className="text-4xl font-bold">100+</h3>
               <p className="text-muted-foreground">Interview Questions</p>
             </div>
             <div className="flex flex-col items-center justify-center space-y-2">
-              <h3 className="text-4xl font-bold">95%</h3>
+              <h3 className="text-4xl font-bold">93%</h3>
               <p className="text-muted-foreground">Success Rate</p>
             </div>
             <div className="flex flex-col items-center justify-center space-y-2">
@@ -85,9 +85,9 @@ export default function LandingPage() {
       <section className="w-full py-12 md:py-24 bg-background">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="text-3xl font-bold mb-4">How It Works</h2>
+            <h2 className="text-3xl font-bold mb-4">How It Functions</h2>
             <p className="text-muted-foreground">
-              Four simple steps to accelerate your career growth
+              Simple steps to get started:
             </p>
           </div>
 
@@ -165,7 +165,7 @@ export default function LandingPage() {
               Frequently Asked Questions
             </h2>
             <p className="text-muted-foreground">
-              Find answers to common questions about our platform
+              Find answers to common questions about our platform 
             </p>
           </div>
 
@@ -189,11 +189,11 @@ export default function LandingPage() {
         <div className="mx-auto py-24 gradient rounded-lg">
           <div className="flex flex-col items-center justify-center space-y-4 text-center max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold tracking-tighter text-primary-foreground sm:text-4xl md:text-5xl">
-              Ready to Accelerate Your Career?
+              Ready to Boost Your Career?
             </h2>
             <p className="mx-auto max-w-[600px] text-primary-foreground/80 md:text-xl">
-              Join thousands of professionals who are advancing their careers
-              with AI-powered guidance.
+              Advance your career with AI-powered guidance.
+              <br />Totally reliable, Totally free.
             </p>
             <Link href="/dashboard" passHref>
               <Button
@@ -201,7 +201,7 @@ export default function LandingPage() {
                 variant="secondary"
                 className="h-11 mt-5 animate-bounce"
               >
-                Start Your Journey Today <ArrowRight className="ml-2 h-4 w-4" />
+                Be a Part of Our Journey Today <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
           </div>
