@@ -84,7 +84,7 @@ const OnboardingForm = ({ industries }) => {
           </CardTitle>
           <CardDescription>
             Select your industry to get personalized career insights and
-            recommendations.
+            recommendations. You can only choose one industry and it cannot be changed. Be careful!
           </CardDescription>
         </CardHeader>
         <CardContent>

@@ -58,6 +58,25 @@ export const industries = [
     ],
   },
   {
+    id: "after10",
+    name: "Career Options After 10th",
+    subIndustries: [
+      "Science (PCMB - Physics, Chemistry, Mathematics, Biology)",
+      "Science (PCB - Physics, Chemistry, Biology)",
+      "Science (PCM - Physics, Chemistry, Mathematics)",
+      "Commerce (with Mathematics)",
+      "Commerce (without Mathematics)",
+      "Arts/Humanities",
+      "Vocational Education",
+      "Diploma Courses",
+      "Polytechnic",
+      "ITI (Industrial Training Institute)",
+      "Skill Development Programs",
+      "Open Schooling & Distance Learning",
+      "Other Specialized Programs",
+    ],
+  },
+  {
     id: "manufacturing",
     name: "Manufacturing & Industrial",
     subIndustries: [
