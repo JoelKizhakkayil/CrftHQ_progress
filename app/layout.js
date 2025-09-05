@@ -54,9 +54,9 @@ export default function RootLayout({ children }) {
                   key={`meteor-${i}`}
                   className="meteor"
                   style={{
-                    top: `${Math.random() * 100}%`,
+                    top: `${4}%`,
                     left: `${Math.random() * 100}%`,
-                    animationDelay: `${Math.random() * 10}s`,
+                    animationDelay: `${Math.random() * 20}s`,
                   }}
                 />
               ))}

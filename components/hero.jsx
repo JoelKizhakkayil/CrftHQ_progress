@@ -1,12 +1,18 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { motion } from 'framer-motion';
 
 const HeroSection = () => {
   const imageRef = useRef(null);
+  const [animationStarted, setAnimationStarted] = useState(false);
+
+  // Split the text into words
+  const titleWords = ["Your", "Career", "Coach", "for", "Professional", "Success"];
 
   useEffect(() => {
     const imageElement = imageRef.current;
@@ -22,6 +28,9 @@ const HeroSection = () => {
       }
     };
 
+    // Start animation when component mounts
+    setAnimationStarted(true);
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -31,9 +40,22 @@ const HeroSection = () => {
       <div className="space-y-6 text-center">
         <div className="space-y-6 mx-auto">
           <h1 className="text-5xl font-bold md:text-6xl lg:text-7xl xl:text-8xl gradient-title animate-gradient">
-            Your Career Coach for
-            <br />
-            Professional Success
+            {titleWords.map((word, index) => (
+              <motion.span
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                animate={animationStarted ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                transition={{
+                  duration: 0.6,
+                  delay: index * 0.3, // Each word appears 0.3 seconds after the previous
+                  ease: "easeOut"
+                }}
+                className="inline-block mr-4"
+              >
+                {word}
+                {index === 3 && <br />} {/* Line break after "for" */}
+              </motion.span>
+            ))}
           </h1>
           <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl">
             Skyrocket your career with personalized guidance, interview prep, and
