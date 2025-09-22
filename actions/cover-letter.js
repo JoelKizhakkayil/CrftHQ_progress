@@ -20,8 +20,8 @@ export async function generateCoverLetter(data) {
   const prompt = `
     Write a professional cover letter for a ${data.jobTitle} position at ${
     data.companyName
-  }.
-    
+  } and make sure you use human words and a conversational tone. dont make it look like it was written by AI.
+
     About the candidate:
     - Industry: ${user.industry}
     - Years of Experience: ${user.experience}

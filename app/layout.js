@@ -9,7 +9,7 @@ import { dark } from "@clerk/themes";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "AI Career Coach",
+  title: "JobSecure - AI Career Assistant",
   description: "Simplifying Career Development",
 };
 
@@ -31,7 +31,6 @@ export default function RootLayout({ children }) {
             enableSystem
             disableTransitionOnChange
           >
-            {/* 🌌 Background (stars + meteors) */}
             <div
               className="fixed inset-0 -z-10 bg-black pointer-events-none"
               aria-hidden="true"
@@ -49,14 +48,14 @@ export default function RootLayout({ children }) {
               ))}
 
               {/* Meteors */}
-              {[...Array(8)].map((_, i) => (
+              {[...Array(10)].map((_, i) => (
                 <div
                   key={`meteor-${i}`}
                   className="meteor"
                   style={{
                     top: `${4}%`,
                     left: `${Math.random() * 100}%`,
-                    animationDelay: `${Math.random() * 20}s`,
+                    animationDelay: `${Math.random() * 10}s`,
                   }}
                 />
               ))}

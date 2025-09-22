@@ -12,7 +12,8 @@ const HeroSection = () => {
   const [animationStarted, setAnimationStarted] = useState(false);
 
   // Split the text into words
-  const titleWords = ["Your", "Career", "Coach", "for", "Professional", "Success"];
+  const titleWords = ["Your", "Career", "Assistant", "for", "Professional", "Success"];
+
 
   useEffect(() => {
     const imageElement = imageRef.current;
